@@ -1,6 +1,7 @@
-//Rewrite to www
+<IfModule mod_rewrite.c>
+ 
 Options +FollowSymLinks
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^https://imamirullah.github.io/test/[nc]
 RewriteRule ^(.*)$ http://www.https://imamirullah.github.io/test//$course [r=301,nc]
- 
+ </IfModule>

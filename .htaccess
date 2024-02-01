@@ -1,11 +1,6 @@
-RewriteEngine On
-
-# Remove .php extension
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.php -f
-RewriteRule ^([^\.]+)/?$ $1.php [NC,L]
-
-# Remove .html extension
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^([^\.]+)/?$ $1.html [NC,L]
+//Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^https://imamirullah.github.io/test/[nc]
+RewriteRule ^(.*)$ http://www.https://imamirullah.github.io/test//$course [r=301,nc]
+ 
